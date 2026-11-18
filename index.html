@@ -172,6 +172,11 @@ h2.wide{font-size:clamp(34px,6.2vw,88px);margin:22px 0 26px}
 .range{display:flex;align-items:center;gap:18px;margin-bottom:38px}
 .range input{flex:1;accent-color:var(--la);height:4px}
 .range output{font-variation-settings:'wdth' 125;font-weight:800;font-size:26px;min-width:110px;text-align:right}
+.ins{display:grid;grid-template-columns:repeat(4,1fr);gap:8px;margin-bottom:38px}
+.ins div{border:1px solid var(--linha2);border-radius:16px;padding:16px 10px;text-align:center}
+.ins b{display:block;font-variation-settings:'wdth' 125;font-size:26px;font-weight:800}
+.ins span{font-family:var(--mono);font-size:11px;color:var(--tx3);line-height:1.35;display:block;margin-top:4px}
+@media(max-width:520px){.ins{grid-template-columns:repeat(2,1fr)}}
 .tog{display:flex;align-items:center;justify-content:space-between;gap:16px;padding:18px 20px;border-radius:16px;border:1px solid var(--linha2);cursor:pointer}
 .tog p{font-size:14px;color:var(--tx2)}
 .tog b{color:var(--tx);display:block;font-size:16px}
@@ -187,7 +192,7 @@ h2.wide{font-size:clamp(34px,6.2vw,88px);margin:22px 0 26px}
 .preco .conta{color:var(--tx2);font-size:15px}
 .tabela{margin-top:22px;display:grid;grid-template-columns:repeat(3,1fr);border-top:1px solid var(--linha)}
 .tabela div{padding:16px 0 0}
-.tabela b{display:block;font-variation-settings:'wdth' 115;font-size:20px}
+.tabela{column-gap:10px}.tabela b{display:block;font-variation-settings:'wdth' 115;font-size:clamp(15px,4.2vw,20px);white-space:nowrap}
 .tabela span{font-family:var(--mono);font-size:11px;color:var(--tx3)}
 .extras{display:grid;grid-template-columns:repeat(3,1fr);gap:20px;margin-top:20px}
 .ex{border:1px solid var(--linha);border-radius:var(--r);padding:28px}
@@ -282,7 +287,7 @@ footer .marcas img{height:44px;width:auto}
       <li><a href="#planos">Planos</a></li>
       <li><a href="#motorista">Motorista parceiro</a></li>
     </ul>
-    <a class="btn btn-la" data-zap="reservar" href="#">Reservar tela</a>
+    <a class="btn btn-la" data-zap="reservar" href="#">Reservar</a>
   </div>
 </header>
 
@@ -295,13 +300,13 @@ footer .marcas img{height:44px;width:auto}
     <h1 class="wide"><span class="w">Sua</span> <span class="w">marca</span> <span class="w">em</span> <span class="w la">movimento.</span></h1>
     <p class="sub">No vidro traseiro, para quem está na rua. Na tela do encosto, para quem está no banco de trás. Com QR Code e relatório para você acompanhar.</p>
     <div class="ctas">
-      <a class="btn btn-la" data-zap="reservar" href="#">Reservar minha tela <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+      <a class="btn btn-la" data-zap="reservar" href="#">Reservar minha campanha <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
       <a class="btn btn-gh" href="#planos">Ver planos</a>
     </div>
     <div class="rodape">
       <div><b>2 frentes</b><span>vidro + tela</span></div>
       <div><b>10 telas</b><span>na frota inicial</span></div>
-      <div><b>R$ 160</b><span>por tela, a partir de</span></div>
+      <div><b>400</b><span>inserções por dia no pacote</span></div>
     </div>
   </div>
 </section>
@@ -334,7 +339,7 @@ footer .marcas img{height:44px;width:auto}
           <img class="marca" src="img/tvcars-horizontal-degrade-v2.svg" alt="TV Cars" width="105" height="46" loading="lazy">
           <h3 class="wide">Tela no encosto</h3>
           <p>Seu vídeo de 10, 15 ou 20 segundos na tela do encosto, bem na frente do passageiro. Com QR Code fixo que leva ao seu WhatsApp, Instagram ou site.<br><small style="opacity:.7">TV Cars é uma franquia integrada à Mova Street.</small></p>
-          <ul><li>10 · 15 · 20 s</li><li>5 ou 10 telas</li><li>QR Code fixo</li><li>relatório no sistema</li></ul>
+          <ul><li>10 · 15 · 20 s</li><li>pacote de 10 telas</li><li>40 inserções/dia por tela</li><li>QR Code fixo</li><li>relatório no sistema</li></ul>
         </div>
       </article>
     </div>
@@ -355,7 +360,7 @@ footer .marcas img{height:44px;width:auto}
     <div>
       <p class="eyebrow rv">Como funciona</p>
       <h2 class="wide rv d1">No ar em<br><span class="la">3 passos.</span></h2>
-      <div class="passo rv"><span class="n">01</span><div><h3>Escolha o formato</h3><p>Vidro, tela ou os dois. Na tela, escolha a duração do anúncio e quantas telas quer ocupar.</p></div></div>
+      <div class="passo rv"><span class="n">01</span><div><h3>Escolha o formato</h3><p>Vidro, tela ou os dois. Na tela, escolha a duração do anúncio no pacote de 10 telas.</p></div></div>
       <div class="passo rv d1"><span class="n">02</span><div><h3>Mande sua arte</h3><p>Envie o vídeo ou a arte da sua marca e o link do QR Code: WhatsApp, Instagram ou site.</p></div></div>
       <div class="passo rv d2"><span class="n">03</span><div><h3>Rode e acompanhe</h3><p>Sua marca entra em circulação e você acompanha pelo relatório: cliques no QR, tela ligada e mapa das rotas.</p></div></div>
     </div>
@@ -410,31 +415,31 @@ footer .marcas img{height:44px;width:auto}
 <section class="sec" id="planos">
   <div class="wrap">
     <p class="eyebrow rv">Planos TV Cars</p>
-    <h2 class="wide rv d1">Preço claro,<br><span class="la">por tela.</span></h2>
-    <p class="lead rv d2">Escolha a duração do anúncio e quantas telas quer ocupar. São 10 telas na frota inicial: quem reserva primeiro garante o espaço.</p>
+    <h2 class="wide rv d1">Um pacote,<br><span class="la">10 telas.</span></h2>
+    <p class="lead rv d2">Seu anúncio roda nas 10 telas da frota por 30 dias, a partir de 40 inserções por dia em cada tela. Você escolhe a duração do vídeo; quem reserva primeiro garante o espaço.</p>
 
     <div class="cfg rv">
       <div class="l">
         <p class="lbl">1 · Duração do anúncio</p>
         <div class="seg" role="group" aria-label="Duração do anúncio">
-          <button type="button" data-s="10" data-p="160" aria-pressed="true"><b>10 s</b><span>R$ 160</span></button>
-          <button type="button" data-s="15" data-p="180" aria-pressed="false"><b>15 s</b><span>R$ 180</span></button>
-          <button type="button" data-s="20" data-p="200" aria-pressed="false"><b>20 s</b><span>R$ 200</span></button>
+          <button type="button" data-s="10" data-p="1600" aria-pressed="true"><b>10 s</b><span>R$ 1.600</span></button>
+          <button type="button" data-s="15" data-p="1800" aria-pressed="false"><b>15 s</b><span>R$ 1.800</span></button>
+          <button type="button" data-s="20" data-p="2000" aria-pressed="false"><b>20 s</b><span>R$ 2.000</span></button>
         </div>
-        <p class="lbl">2 · Quantidade de telas</p>
-        <div class="range"><input id="qt" type="range" min="1" max="10" value="5" aria-label="Quantidade de telas"><output id="qto">5 telas</output></div>
+        <p class="lbl">2 · O que vem no pacote</p>
+        <div class="ins"><div><b>10</b><span>telas</span></div><div><b>40</b><span>inserções/dia<br>em cada tela</span></div><div><b>400</b><span>inserções/dia<br>no pacote</span></div><div><b>30</b><span>dias de<br>campanha</span></div></div>
         <p class="lbl">3 · Exclusividade</p>
-        <label class="tog"><div><b>Quero exclusividade</b><p>+50% sobre o valor, com contrato de 6 meses.</p></div><input id="ex" type="checkbox"><span class="sw"></span></label>
+        <label class="tog"><div><b>Quero exclusividade</b><p>+50% sobre o valor do contrato de telas, com contrato de 6 meses.</p></div><input id="ex" type="checkbox"><span class="sw"></span></label>
       </div>
       <div class="r">
         <div class="preco">
-          <small>Investimento da sua seleção · a partir de</small>
-          <div class="v"><em>R$</em><span id="val">800</span></div>
-          <p class="conta" id="conta">5 telas × a partir de R$ 160 por tela · anúncio de 10 s</p>
+          <small>Investimento por 30 dias · a partir de</small>
+          <div class="v"><em>R$</em><span id="val">1.600</span></div>
+          <p class="conta" id="conta">Pacote de 10 telas · anúncio de 10 s · por 30 dias</p>
           <div class="tabela">
-            <div><b>R$ 160</b><span>a partir de · 10 s por tela</span></div>
-            <div><b>R$ 180</b><span>a partir de · 15 s por tela</span></div>
-            <div><b>R$ 200</b><span>a partir de · 20 s por tela</span></div>
+            <div><b>R$ 1.600</b><span>a partir de · 10 s</span></div>
+            <div><b>R$ 1.800</b><span>a partir de · 15 s</span></div>
+            <div><b>R$ 2.000</b><span>a partir de · 20 s</span></div>
           </div>
         </div>
         <a class="btn btn-la" id="reservaPlano" href="#" style="justify-content:center">Reservar esta seleção <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
@@ -442,9 +447,9 @@ footer .marcas img{height:44px;width:auto}
     </div>
 
     <div class="extras">
-      <div class="ex rv"><span class="k">Visualizações</span><h4>5 telas ≈ 5 mil · 10 telas ≈ 10 mil</h4><p>Estimativa da empresa. O resultado real da sua campanha aparece no relatório.</p></div>
-      <div class="ex rv d1"><span class="k">Mova Street · vidro</span><h4>Sob consulta</h4><p>Por quantidade de carros e período: 30, 60, 90, 120, 150 ou 180 dias, ou personalizado.</p></div>
-      <div class="ex rv d2"><span class="k">Exclusividade</span><h4>Seu espaço protegido</h4><p>Com exclusividade, contrato de 6 meses e +50% sobre o valor por tela. Combine os detalhes no WhatsApp.</p></div>
+      <div class="ex rv"><span class="k">Visualizações</span><h4>10 telas ≈ 10 mil</h4><p>Estimativa da empresa. O resultado real da sua campanha aparece no relatório.</p></div>
+      <div class="ex rv d1"><span class="k">Mova Street · vidro</span><h4>Até R$ 450 / 30 dias</h4><p>Por adesivo. Fica menor com mais carros e mais tempo: 30 a 180 dias, ou personalizado.</p></div>
+      <div class="ex rv d2"><span class="k">Exclusividade</span><h4>Seu espaço protegido</h4><p>Contrato de 6 meses e +50% sobre o valor do contrato de telas. Combine os detalhes no WhatsApp.</p></div>
     </div>
   </div>
 </section>
@@ -509,10 +514,10 @@ footer .marcas img{height:44px;width:auto}
     <div class="faq rv d2">
       <details><summary>Já faço Instagram. Preciso disso?<i></i></summary><p>A ideia não é substituir suas redes, e sim completar: levar sua marca também para a rua e para dentro dos carros, onde a pessoa não está rolando o feed.</p></details>
       <details><summary>Como eu sei se está funcionando?<i></i></summary><p>Pelo QR Code fixo na tela e pelo relatório do sistema: cliques no QR, tempo de tela ligada e mapa de calor das rotas. No vidro, você recebe fotos e km rodados.</p></details>
-      <details><summary>Quanto custa?<i></i></summary><p>Na tela, os valores partem de R$ 160 (10 s), R$ 180 (15 s) e R$ 200 (20 s) por tela, e são ajustados conforme a quantidade de telas e o período da campanha. Com exclusividade, +50% com contrato de 6 meses. O adesivo no vidro é sob consulta, conforme a quantidade de carros e o tempo de exposição. A proposta final é fechada na conversa.</p></details>
-      <details><summary>Quais durações e prazos existem?<i></i></summary><p>Anúncios de 10, 15 ou 20 segundos na tela, em combos de 5 ou 10 telas. No vidro, campanhas de 30 a 180 dias ou com prazo personalizado.</p></details>
+      <details><summary>Quanto custa?<i></i></summary><p>As telas são vendidas em pacote de 10 telas por 30 dias, a partir de R$ 1.600 (10 s), R$ 1.800 (15 s) ou R$ 2.000 (20 s). Com exclusividade, +50% sobre o valor do contrato de telas, com contrato de 6 meses. O adesivo no vidro custa até R$ 450 por adesivo por 30 dias e fica menor com mais carros e mais tempo de exposição. A proposta final é fechada na conversa.</p></details>
+      <details><summary>Quais durações e prazos existem?<i></i></summary><p>Na tela, anúncios de 10, 15 ou 20 segundos no pacote de 10 telas, a partir de 40 inserções por dia em cada tela (400 por dia no pacote), por 30 dias ou mais. No vidro, campanhas de 30 a 180 dias ou com prazo personalizado.</p></details>
       <details><summary>Quem faz a arte do anúncio?<i></i></summary><p>Você pode mandar sua arte ou vídeo pronto. Se precisar de ajuda para adaptar ao formato da tela, fale com a gente no WhatsApp.</p></details>
-      <details><summary>Achei caro. Tem opção menor?<i></i></summary><p>Sim. Dá para começar com menos telas ou ajustar o período da campanha ao seu orçamento.</p></details>
+      <details><summary>Achei caro. Tem opção menor?<i></i></summary><p>Dá para ajustar: um vídeo mais curto (10 s) reduz o valor do pacote, e no vidro o preço por adesivo cai com mais carros e mais tempo. A gente monta a campanha com você no WhatsApp.</p></details>
     </div>
   </div>
 </section>
@@ -524,7 +529,7 @@ footer .marcas img{height:44px;width:auto}
     <h2 class="wide rv d1">Reserve a sua <span class="la">antes</span> do seu concorrente.</h2>
     <p class="lead rv d2">Fale com a equipe no WhatsApp, receba o mapa de visibilidade da sua empresa e escolha seu formato.</p>
     <div class="ctas rv d3">
-      <a class="btn btn-la" data-zap="reservar" href="#">Reservar minha tela <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+      <a class="btn btn-la" data-zap="reservar" href="#">Reservar minha campanha <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
       <a class="btn btn-gh" data-zap="mapa" href="#">Receber o mapa de visibilidade</a>
     </div>
   </div>
@@ -549,7 +554,7 @@ footer .marcas img{height:44px;width:auto}
 (function(){
   var N='5598984200100';
   var M={
-    reservar:'Olá! Vim pelo site da Mova Street + TV Cars e quero reservar minha tela.',
+    reservar:'Olá! Vim pelo site da Mova Street + TV Cars e quero reservar minha campanha.',
     combo:'Olá! Vim pelo site e quero saber do combo vidro traseiro + tela no encosto.',
     mapa:'Olá! Quero receber o mapa de visibilidade da minha empresa. Meu bairro é: ___ e meu ramo é: ___',
     motorista:'Olá! Sou motorista e quero ser parceiro da Mova Street + TV Cars. Meu carro é: ___'
@@ -557,18 +562,17 @@ footer .marcas img{height:44px;width:auto}
   function wa(t){return 'https://wa.me/'+N+'?text='+encodeURIComponent(t)}
   document.querySelectorAll('[data-zap]').forEach(function(a){a.href=wa(M[a.dataset.zap]);a.target='_blank';a.rel='noopener'});
 
-  // planos
-  var s=10,p=160,btns=document.querySelectorAll('.seg button'),qt=document.getElementById('qt'),ex=document.getElementById('ex');
+  // planos: pacote de 10 telas por 30 dias
+  var s=10,p=1600,btns=document.querySelectorAll('.seg button'),ex=document.getElementById('ex');
   function fmt(n){return n.toLocaleString('pt-BR',{minimumFractionDigits:n%1?2:0,maximumFractionDigits:2})}
   function calc(){
-    var q=+qt.value,tot=q*p*(ex.checked?1.5:1);
-    document.getElementById('qto').textContent=q+(q>1?' telas':' tela');
+    var tot=p*(ex.checked?1.5:1);
     document.getElementById('val').textContent=fmt(tot);
-    document.getElementById('conta').textContent=q+(q>1?' telas':' tela')+' × a partir de R$ '+p+' por tela · anúncio de '+s+' s'+(ex.checked?' · com exclusividade (+50%, contrato de 6 meses)':'');
-    document.getElementById('reservaPlano').href=wa('Olá! Vim pelo site e quero reservar: '+q+(q>1?' telas':' tela')+' com anúncio de '+s+' s'+(ex.checked?', com exclusividade (contrato de 6 meses)':'')+'. Valor de referência no site: a partir de R$ '+fmt(tot)+'.');
+    document.getElementById('conta').textContent='Pacote de 10 telas · anúncio de '+s+' s · 400 inserções/dia · por 30 dias'+(ex.checked?' · com exclusividade (+50%, contrato de 6 meses: a partir de R$ '+fmt(tot*6)+' no contrato)':'');
+    document.getElementById('reservaPlano').href=wa('Olá! Vim pelo site e quero reservar o pacote de 10 telas TV Cars com anúncio de '+s+' s (40 inserções por dia em cada tela, 30 dias)'+(ex.checked?', com exclusividade (contrato de 6 meses)':'')+'. Valor de referência no site: a partir de R$ '+fmt(tot)+' por 30 dias.');
   }
   btns.forEach(function(b){b.addEventListener('click',function(){btns.forEach(function(x){x.setAttribute('aria-pressed','false')});b.setAttribute('aria-pressed','true');s=+b.dataset.s;p=+b.dataset.p;calc()})});
-  qt.addEventListener('input',calc);ex.addEventListener('change',calc);
+  ex.addEventListener('change',calc);
   var rp=document.getElementById('reservaPlano');rp.target='_blank';rp.rel='noopener';calc();
 
   // topo, zap e rolagem
