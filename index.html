@@ -333,7 +333,7 @@ footer .marcas img{height:44px;width:auto}
         <div class="in">
           <img class="marca" src="img/tvcars-horizontal-degrade-v2.svg" alt="TV Cars" width="105" height="46" loading="lazy">
           <h3 class="wide">Tela no encosto</h3>
-          <p>Seu vídeo de 10, 15 ou 20 segundos na tela do encosto, bem na frente do passageiro. Com QR Code fixo que leva ao seu WhatsApp, Instagram ou site.</p>
+          <p>Seu vídeo de 10, 15 ou 20 segundos na tela do encosto, bem na frente do passageiro. Com QR Code fixo que leva ao seu WhatsApp, Instagram ou site.<br><small style="opacity:.7">TV Cars é uma franquia integrada à Mova Street.</small></p>
           <ul><li>10 · 15 · 20 s</li><li>5 ou 10 telas</li><li>QR Code fixo</li><li>relatório no sistema</li></ul>
         </div>
       </article>
@@ -428,13 +428,13 @@ footer .marcas img{height:44px;width:auto}
       </div>
       <div class="r">
         <div class="preco">
-          <small>Investimento da sua seleção</small>
+          <small>Investimento da sua seleção · a partir de</small>
           <div class="v"><em>R$</em><span id="val">800</span></div>
-          <p class="conta" id="conta">5 telas × R$ 160 por tela · anúncio de 10 s</p>
+          <p class="conta" id="conta">5 telas × a partir de R$ 160 por tela · anúncio de 10 s</p>
           <div class="tabela">
-            <div><b>R$ 160</b><span>10 s · por tela</span></div>
-            <div><b>R$ 180</b><span>15 s · por tela</span></div>
-            <div><b>R$ 200</b><span>20 s · por tela</span></div>
+            <div><b>R$ 160</b><span>a partir de · 10 s por tela</span></div>
+            <div><b>R$ 180</b><span>a partir de · 15 s por tela</span></div>
+            <div><b>R$ 200</b><span>a partir de · 20 s por tela</span></div>
           </div>
         </div>
         <a class="btn btn-la" id="reservaPlano" href="#" style="justify-content:center">Reservar esta seleção <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
@@ -509,7 +509,7 @@ footer .marcas img{height:44px;width:auto}
     <div class="faq rv d2">
       <details><summary>Já faço Instagram. Preciso disso?<i></i></summary><p>A ideia não é substituir suas redes, e sim completar: levar sua marca também para a rua e para dentro dos carros, onde a pessoa não está rolando o feed.</p></details>
       <details><summary>Como eu sei se está funcionando?<i></i></summary><p>Pelo QR Code fixo na tela e pelo relatório do sistema: cliques no QR, tempo de tela ligada e mapa de calor das rotas. No vidro, você recebe fotos e km rodados.</p></details>
-      <details><summary>Quanto custa?<i></i></summary><p>Na tela, o valor é por tela: R$ 160 (10 s), R$ 180 (15 s) ou R$ 200 (20 s). Com exclusividade, +50% com contrato de 6 meses. O adesivo no vidro é sob consulta.</p></details>
+      <details><summary>Quanto custa?<i></i></summary><p>Na tela, os valores partem de R$ 160 (10 s), R$ 180 (15 s) e R$ 200 (20 s) por tela, e são ajustados conforme a quantidade de telas e o período da campanha. Com exclusividade, +50% com contrato de 6 meses. O adesivo no vidro é sob consulta, conforme a quantidade de carros e o tempo de exposição. A proposta final é fechada na conversa.</p></details>
       <details><summary>Quais durações e prazos existem?<i></i></summary><p>Anúncios de 10, 15 ou 20 segundos na tela, em combos de 5 ou 10 telas. No vidro, campanhas de 30 a 180 dias ou com prazo personalizado.</p></details>
       <details><summary>Quem faz a arte do anúncio?<i></i></summary><p>Você pode mandar sua arte ou vídeo pronto. Se precisar de ajuda para adaptar ao formato da tela, fale com a gente no WhatsApp.</p></details>
       <details><summary>Achei caro. Tem opção menor?<i></i></summary><p>Sim. Dá para começar com menos telas ou ajustar o período da campanha ao seu orçamento.</p></details>
@@ -539,7 +539,7 @@ footer .marcas img{height:44px;width:auto}
       <a href="#" data-zap="reservar">WhatsApp (98) 98420-0100</a>
     </div>
     <div class="gigante" aria-hidden="true">Mova Street</div>
-    <div class="row" style="margin-top:24px;font-size:12px"><p>© 2026 Mova Street + TV Cars · Grande Ilha de São Luís, MA</p><p>Imagens ilustrativas geradas por IA.</p></div>
+    <div class="row" style="margin-top:24px;font-size:12px"><p>© 2026 Mova Street + TV Cars · TV Cars, franquia integrada à Mova Street · Grande Ilha de São Luís, MA</p><p>Imagens ilustrativas geradas por IA.</p></div>
   </div>
 </footer>
 
@@ -564,8 +564,8 @@ footer .marcas img{height:44px;width:auto}
     var q=+qt.value,tot=q*p*(ex.checked?1.5:1);
     document.getElementById('qto').textContent=q+(q>1?' telas':' tela');
     document.getElementById('val').textContent=fmt(tot);
-    document.getElementById('conta').textContent=q+(q>1?' telas':' tela')+' × R$ '+p+' por tela · anúncio de '+s+' s'+(ex.checked?' · com exclusividade (+50%, contrato de 6 meses)':'');
-    document.getElementById('reservaPlano').href=wa('Olá! Vim pelo site e quero reservar: '+q+(q>1?' telas':' tela')+' com anúncio de '+s+' s'+(ex.checked?', com exclusividade (contrato de 6 meses)':'')+'. Valor que vi no site: R$ '+fmt(tot)+'.');
+    document.getElementById('conta').textContent=q+(q>1?' telas':' tela')+' × a partir de R$ '+p+' por tela · anúncio de '+s+' s'+(ex.checked?' · com exclusividade (+50%, contrato de 6 meses)':'');
+    document.getElementById('reservaPlano').href=wa('Olá! Vim pelo site e quero reservar: '+q+(q>1?' telas':' tela')+' com anúncio de '+s+' s'+(ex.checked?', com exclusividade (contrato de 6 meses)':'')+'. Valor de referência no site: a partir de R$ '+fmt(tot)+'.');
   }
   btns.forEach(function(b){b.addEventListener('click',function(){btns.forEach(function(x){x.setAttribute('aria-pressed','false')});b.setAttribute('aria-pressed','true');s=+b.dataset.s;p=+b.dataset.p;calc()})});
   qt.addEventListener('input',calc);ex.addEventListener('change',calc);
